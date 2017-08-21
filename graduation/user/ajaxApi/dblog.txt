@@ -1,0 +1,101 @@
+2016-03-09 17:09:38 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),l_feature varchar(255),l_desc varchar(255),l_img varchar(255),p_date date,u_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:38 执行 INSERT into atmp_table select 1 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from lost left join pull on lost.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:38 执行 INSERT into atmp_table select 0 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from found left join pull on found.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:38 执行 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:38 获取一条记录 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:38 执行 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:38 获取一条记录 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:38 执行 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:38 获取一条记录 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:38 执行 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:38 获取一条记录 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:38 释放结果集
+2016-03-09 17:09:38 ip::1,用时0.11131978034973
+2016-03-09 17:09:42 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),l_feature varchar(255),l_desc varchar(255),l_img varchar(255),p_date date,u_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:42 执行 INSERT into atmp_table select 1 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from lost left join pull on lost.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:42 执行 INSERT into atmp_table select 0 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from found left join pull on found.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:42 执行 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:42 获取一条记录 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:42 执行 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:42 获取一条记录 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:42 执行 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:42 获取一条记录 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:42 执行 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:42 获取一条记录 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:42 释放结果集
+2016-03-09 17:09:42 ip::1,用时0.078645944595337
+2016-03-09 17:09:45 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),l_feature varchar(255),l_desc varchar(255),l_img varchar(255),p_date date,u_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:45 执行 INSERT into atmp_table select 1 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from lost left join pull on lost.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:45 执行 INSERT into atmp_table select 0 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from found left join pull on found.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:45 执行 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:45 获取一条记录 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:45 执行 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:45 获取一条记录 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:45 执行 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:45 获取一条记录 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:45 执行 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:45 获取一条记录 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:45 释放结果集
+2016-03-09 17:09:45 ip::1,用时0.10951590538025
+2016-03-09 17:09:47 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),l_feature varchar(255),l_desc varchar(255),l_img varchar(255),p_date date,u_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:47 执行 INSERT into atmp_table select 1 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from lost left join pull on lost.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:47 执行 INSERT into atmp_table select 0 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from found left join pull on found.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:47 执行 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:47 获取一条记录 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:47 执行 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:47 获取一条记录 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:47 执行 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:47 获取一条记录 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:47 执行 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:47 获取一条记录 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:47 释放结果集
+2016-03-09 17:09:47 ip::1,用时0.17027187347412
+2016-03-09 17:09:49 执行 select * from result where l_id=184 and u_id=13 and l_type=0
+2016-03-09 17:09:49 获取一条记录 select * from result where l_id=184 and u_id=13 and l_type=0
+2016-03-09 17:09:49 执行 insert into result(l_id,u_id,l_type,state) values('184','13','0','1')
+2016-03-09 17:09:49 插入成功
+2016-03-09 17:09:49 释放结果集
+2016-03-09 17:09:49 ip::1,用时0.011603832244873
+2016-03-09 17:09:49 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),l_feature varchar(255),l_desc varchar(255),l_img varchar(255),p_date date,u_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:49 执行 INSERT into atmp_table select 1 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from lost left join pull on lost.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:49 执行 INSERT into atmp_table select 0 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from found left join pull on found.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:49 执行 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:49 获取一条记录 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:49 执行 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:49 获取一条记录 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:49 执行 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:49 获取一条记录 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:49 执行 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:49 获取一条记录 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:49 释放结果集
+2016-03-09 17:09:49 ip::1,用时0.10912203788757
+2016-03-09 17:09:51 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),u_id int(11),u_name varchar(255),r_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:51 执行 INSERT into atmp_table select 0 as type,found.l_id,found.l_name,result.u_id,found.u_name,result.r_id from result left join found on result.l_id=found.l_id where found.u_id=13  and result.l_type=0 and result.state!=2
+2016-03-09 17:09:51 执行 INSERT into atmp_table select 1 as type,lost.l_id,lost.l_name,result.u_id,lost.u_name,result.r_id from result left join lost on result.l_id=lost.l_id where lost.u_id=13  and result.l_type=1 and result.state!=2
+2016-03-09 17:09:51 执行 select atmp_table.l_id,atmp_table.l_name,atmp_table.type,atmp_table.u_id,atmp_table.r_id,validation.q_id,validation.question,validation.answer,q_manage.u_answer from (validation left join q_manage on validation.q_id=q_manage.q_id) right join atmp_table on validation.l_id=atmp_table.l_id where validation.question is null or (validation.question is not null and u_answer is not null) order by atmp_table.r_id desc,q_manage.id desc
+2016-03-09 17:09:51 获取全部记录 
+2016-03-09 17:09:51 执行 select name from user where id=13
+2016-03-09 17:09:51 获取一条记录 select name from user where id=13
+2016-03-09 17:09:51 释放结果集
+2016-03-09 17:09:51 ip::1,用时0.058894872665405
+2016-03-09 17:09:54 执行 select * from result where r_id=78
+2016-03-09 17:09:54 获取一条记录 select * from result where r_id=78
+2016-03-09 17:09:54 执行 select q_manage.q_id from validation right join q_manage on validation.q_id=q_manage.q_id where validation.l_id=184 and validation.l_type=0 and q_manage.u_id=13
+2016-03-09 17:09:54 获取全部记录 
+2016-03-09 17:09:54 执行 delete from result where 1=1 and r_id=78
+2016-03-09 17:09:54 删除成功 
+2016-03-09 17:09:54 释放结果集
+2016-03-09 17:09:54 ip::1,用时0.0021090507507324
+2016-03-09 17:09:54 执行 CREATE TEMPORARY TABLE atmp_table(type int(1),l_id int(11),l_name varchar(255),l_feature varchar(255),l_desc varchar(255),l_img varchar(255),p_date date,u_id int(11)) default charset utf8 COLLATE utf8_general_ci
+2016-03-09 17:09:55 执行 INSERT into atmp_table select 1 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from lost left join pull on lost.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:55 执行 INSERT into atmp_table select 0 as type,l_id,l_name,l_feature,l_desc,l_img,p_date,u_id from found left join pull on found.l_id=pull.r_id where u_id=13
+2016-03-09 17:09:55 执行 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:55 获取一条记录 select count(*) as total from atmp_table left join pull on atmp_table.l_id=pull.r_id where pull.l_type=atmp_table.type and pull.state=0
+2016-03-09 17:09:55 执行 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:55 获取一条记录 select count(*) as total from atmp_table left join result on atmp_table.l_id=result.l_id where result.l_type=atmp_table.type and result.state=1
+2016-03-09 17:09:55 执行 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:55 获取一条记录 select count(*) as total from atmp_table left join xiansuo on atmp_table.l_id=xiansuo.l_id where xiansuo.l_type=atmp_table.type and xiansuo.xs_state=0
+2016-03-09 17:09:55 执行 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:55 获取一条记录 select count(*) as total from renling where (rl_uid=13 and l_type=0 and check_state=0) or (u_id=13 and l_type=1 and check_state=0)
+2016-03-09 17:09:55 释放结果集
+2016-03-09 17:09:55 ip::1,用时0.11125183105469
